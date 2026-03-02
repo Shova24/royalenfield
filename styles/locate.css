@@ -125,6 +125,7 @@ max-width: min(20rem,90vw);
     cursor: pointer;
     transition: all 0.3s ease;
     font-weight: 100;
+    border: 1px solid rgba(255,255,255,0.08);
 
 
 }
