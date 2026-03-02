@@ -415,6 +415,15 @@ padding-inline: 10rem;
 
 }
 
-.header-title-gap{
-    padding-block: 2rem;
+.section-gap{
+    padding-block: 4rem;
+}
+
+.header-title{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 2.5rem;
+    letter-spacing: -1px;
+    font-weight: 700;
+    margin-bottom: 2rem;
 }

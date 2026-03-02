@@ -1,0 +1,48 @@
+.legacy-section{
+  background-color:  rgba(41, 40, 40, 0.9);
+}
+
+.legacy-section .legacy-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.legacy-section .legacy-container .header-title{
+    text-align: left;
+}
+
+.legacy-section .legacy-container .slider-container{
+    position: relative;
+}
+.legacy-section .legacy-container .slider-container .legacy-navigation-container{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    pointer-events: none; 
+}
+.legacy-section button{
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    position: absolute;
+    pointer-events: auto;
+    z-index: 5;
+}
+
+.legacy-section .legacy-container .slider-container .legacy-navigation-container .prev-btn{
+    left: -1.5rem;
+}
+
+.legacy-section .legacy-container .slider-container .legacy-navigation-container .next-btn{
+    right: -1.5rem;
+}
