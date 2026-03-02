@@ -1,0 +1,130 @@
+.locate-us-section {
+  padding: 4rem 0;
+}
+
+
+.locate-us-container {
+  position: relative;
+  margin: auto;
+  width: calc(100vw - 20rem);
+  max-width: 1200px;
+  aspect-ratio: 9/4;
+  overflow: hidden;
+}
+
+
+.bg-image-wrapper {
+  position: absolute;
+  inset: 0;
+}
+
+.bg-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0.675) 60%,
+    rgba(0, 0, 0, 0.975) 100%
+  );
+  z-index: 1;
+}
+
+
+.locate-us-content {
+  position: absolute;
+  inset: 0;
+  z-index: 2; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 2rem;
+}
+
+.locate-us-info{
+max-width: min(20rem,90vw);
+
+}
+
+.locate-us-info h2{
+    font-size: 2.5rem;
+    letter-spacing: -1px;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.locate-us-info p{
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 130%;
+}
+
+.locate-us-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.locate-us-form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.locate-us-form form .form-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.locate-us-form form .form-group label{
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.75);
+    margin-bottom: .25rem;
+}
+
+.locate-us-form form .form-group input{
+    padding: 0.875rem 1rem;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+}
+
+.locate-us-form form .form-group input::placeholder{
+    color: rgba(255, 255, 255, 0.3);
+    font-weight: 100;
+}
+
+.locate-us-form form .form-group  input:focus{
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.locate-us-form form .form-group button{
+    padding: 0.875rem 1rem;
+    border: none;
+    outline: none;
+    background-color: rgba(41, 40, 40, 0.9);
+    color: whitesmoke;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 100;
+
+
+}
