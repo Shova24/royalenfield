@@ -7,6 +7,8 @@
 }
 body{
     background-color: #000;
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
 }
 /* Hero Section */
 .hero-banner-slide {
@@ -411,4 +413,8 @@ border: none;
 .page-container {
 padding-inline: 10rem;
 
+}
+
+.header-title-gap{
+    padding-block: 2rem;
 }
