@@ -1,0 +1,121 @@
+/* ================= HERO SECTION ================= */
+
+.hero-banner-slide {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Background */
+.hero-banner-slide .background {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-banner-slide .background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Overlay */
+.hero-banner-slide::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.2)
+  );
+  z-index: 1;
+}
+
+/* Content Layer */
+.hero-banner-slide .top-content {
+  position: relative; /* important */
+  z-index: 2;
+  height: 100%;
+}
+
+/* Remove layout restrictions */
+.content-wrapper,
+.inner-wrapper {
+  height: 100%;
+  position: static;
+}
+
+/* ================= CENTERED INFO ================= */
+
+.hero-banner-slide .info {
+  position: absolute;
+  top: 50%;
+  left: 10rem;
+  transform: translateY(-50%);
+  color: #fff;
+}
+
+/* Heading */
+.hero-banner-slide h2 {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+/* Button */
+.hero-banner-slide button {
+  padding: 12px 28px;
+  border: none;
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.hero-banner-slide button:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* ================= NAVIGATION (NOW FIXED) ================= */
+
+.hero-banner-slide .navigation-container {
+  position: absolute;
+  left: 10rem;
+  bottom: 10vh;
+  display: flex;
+  gap: 14px;
+  z-index: 3; /* above overlay */
+  transform: none; /* reset any inherited transform */
+  top: auto; /* reset any inherited top */
+  width: auto; /* reset any inherited width */
+}
+
+.hero-banner-slide .navigation-item {
+  width: 60px;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.hero-banner-slide .navigation-item.active {
+  width: 80px;
+  background: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-banner-slide .info {
+    left: 2rem;
+  }
+
+  .hero-banner-slide .navigation-container {
+    left: 2rem;
+  }
+
+  .hero-banner-slide h2 {
+    font-size: 2rem;
+  }
+}
