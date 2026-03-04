@@ -1,0 +1,204 @@
+
+
+.highlight-slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.background {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bg-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: 1;
+}
+
+
+
+.top-content-wrapper {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+
+
+.slides-track {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    height: 100%;
+    gap: 4rem;   
+}
+
+
+.side-slide {
+    flex: 0 0 28rem; /* fixed width */
+    aspect-ratio: 5/2;
+    overflow: hidden;
+}
+
+.side-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Left = Top aligned */
+.left-slide {
+    /* align-self: flex-end; */
+}
+
+/* Right = Bottom aligned */
+.right-slide {
+    /* align-self: flex-start; */
+}
+
+/* ===== CENTER SLIDE ===== */
+
+.center-slide {
+    flex: 0 0 30rem; /* matches card */
+    display: flex;
+    justify-content: center;
+}
+
+/* ===== CARD ===== */
+
+.card-wrapper {
+    width: 30rem;
+    padding: 2rem;
+
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Image in card */
+.image-wrapper {
+    width: 100%;
+       aspect-ratio: 5/2;
+    overflow: hidden;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Text */
+.card-wrapper p {
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Button */
+.card-wrapper button {
+    padding: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-transform: uppercase;
+}
+
+.card-wrapper button:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 1024px) {
+    .side-slide {
+        display: none;
+    }
+
+    .navigation-container {
+        width: 90%;
+    }
+
+    .card-wrapper {
+        width: 90%;
+    }
+}
+
+
+
+/* ===== NAVIGATION LAYOUT ===== */
+
+.navigation-layout {
+    position: absolute;
+    inset: 0;
+
+    z-index: 5;
+    pointer-events: none; /* allow clicks only on buttons */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* ===== NAVIGATION CONTAINER ===== */
+
+.navigation-container {
+    width: 33.5rem; /* same as card-wrapper */
+    display: flex;
+    justify-content: space-between;
+    pointer-events: auto; /* enable button clicks */
+
+}
+
+/* Buttons */
+.navigation-container button {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    transition: 0.3s ease;
+    border-radius: 50%;
+    height: 3.5rem;
+    width: 3.5rem ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navigation-container button svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    stroke: currentColor;
+    flex-shrink: 0;
+}
+
+.navigation-container button:hover {
+    background: #fff;
+    color: #000;
+}
