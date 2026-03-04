@@ -1,0 +1,111 @@
+.motorcycles-section {}
+
+.motorcycles-section .motorcycles-title {
+
+    margin-bottom: 2rem;
+}
+
+.motorcycles-section .top-menu-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.motorcycles-section .navigation-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 3rem;
+    z-index: 2;   /* above menus */
+    pointer-events: auto;
+}
+
+.motorcycles-section .navigation-container button {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.motorcycles-section .navigation-container button:hover {
+    background: #fff;
+    color: #000;
+}
+
+.motorcycles-section .navigation-container svg {
+    width: 1.3rem;
+    height: 1.3rem;
+    stroke: currentColor;
+}
+
+.motorcycles-section .top-menu-wrapper ul {
+    display: flex;
+    gap: 4rem;
+}
+
+.motorcycles-section .top-menu-wrapper ul li {
+    list-style: none;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    font-weight: 700;
+}
+
+.motorcycles-section .motorcycles-actions{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 0.5rem;
+}
+
+.motorcycles-slides-track{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: max-content;
+    padding-bottom: 2rem;
+    width: 100%;
+}
+
+.motorcycles-slides-track .side-slide{
+    min-width: 80dvw;
+    height: auto;
+}
+
+
+
+.motorcycles-section .motorcycles-actions .know-more-button{
+    border: none;
+    background: transparent;
+    color: red;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.motorcycles-section .motorcycles-actions .action-button{
+    padding: 1rem 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-transform: uppercase;
+}

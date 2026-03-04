@@ -14,6 +14,8 @@ function loadSection(id, file) {
 
 loadSection("hero", "/sections/hero.html");
 loadSection("highlights", "/sections/highlights.html");
+loadSection("motorcycles", "/sections/motorcycles.html");
+loadSection("motoculture", "/sections/motoculture.html");
 loadSection("rides", "/sections/rides.html");
 loadSection("latest", "/sections/latest.html");
 loadSection("legacy", "/sections/legacy.html");
