@@ -131,22 +131,6 @@
     color: #000;
 }
 
-/* ===== RESPONSIVE ===== */
-
-@media (max-width: 1024px) {
-    .side-slide {
-        display: none;
-    }
-
-    .navigation-container {
-        width: 90%;
-    }
-
-    .card-wrapper {
-        width: 90%;
-    }
-}
-
 
 
 /* ===== NAVIGATION LAYOUT ===== */
@@ -201,4 +185,66 @@
 .navigation-container button:hover {
     background: #fff;
     color: #000;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 1024px) {
+    .side-slide {
+        display: none;
+    }
+
+    .center-slide {
+        flex: 1;
+    }
+
+    .card-wrapper {
+        width: 90%;
+        max-width: 30rem;
+    }
+
+    .navigation-container {
+        width: 90%;
+        max-width: 33.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .highlight-slider {
+        min-height: auto;
+    }
+
+    .slides-track {
+        gap: 2rem;
+    }
+
+    .card-wrapper {
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .card-wrapper p {
+        font-size: 0.875rem;
+    }
+
+    .navigation-container button {
+        height: 3rem;
+        width: 3rem;
+    }
+
+    .navigation-container button svg {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-wrapper {
+        width: 95%;
+        padding: 1rem;
+    }
+
+    .image-wrapper {
+        aspect-ratio: 16/9;
+    }
 }

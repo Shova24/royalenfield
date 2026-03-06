@@ -81,3 +81,57 @@
     font-weight: 700;
     color: rgba(255,255,255,0.7);;
 }
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 1024px) {
+  .moto-culture-section .moto-culture-container {
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .moto-culture-section .moto-culture-card {
+    max-width: 22rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .moto-culture-section .moto-culture-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .moto-culture-section .moto-culture-card {
+    max-width: 100%;
+    width: 100%;
+    aspect-ratio: 4/5;
+  }
+
+  .moto-culture-section .card-content h3 {
+    font-size: 2rem;
+  }
+
+  .moto-culture-section .card-content h2 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .moto-culture-section .moto-culture-card {
+    aspect-ratio: 3/4;
+  }
+
+  .moto-culture-section .card-content {
+    padding: 1rem;
+  }
+
+  .moto-culture-section .card-content h3 {
+    font-size: 1.75rem;
+  }
+
+  .moto-culture-section .card-content h2 {
+    font-size: 1.1rem;
+  }
+}

@@ -113,3 +113,71 @@ gap: 0.5rem;
     transition: 0.3s ease;
     text-transform: uppercase;
 }
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 1024px) {
+  .motorcycles-section .top-menu-wrapper ul {
+    gap: 2rem;
+  }
+
+  .motorcycles-section .top-menu-wrapper ul li {
+    font-size: 1.25rem;
+  }
+
+  .motorcycles-section .navigation-container {
+    padding-inline: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .motorcycles-section .top-menu-wrapper {
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+  }
+
+  .motorcycles-section .top-menu-wrapper ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem 1.5rem;
+  }
+
+  .motorcycles-section .top-menu-wrapper ul li {
+    font-size: 1rem;
+    letter-spacing: -1px;
+  }
+
+  .motorcycles-section .navigation-container {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 0;
+  }
+
+  .motorcycles-section .navigation-container button {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  .motorcycles-slides-track .side-slide {
+    min-width: 90dvw;
+  }
+
+  .motorcycles-section .motorcycles-actions .action-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .motorcycles-section .top-menu-wrapper ul li {
+    font-size: 0.875rem;
+  }
+
+  .motorcycles-slides-track .side-slide {
+    min-width: 95dvw;
+  }
+}

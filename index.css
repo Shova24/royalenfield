@@ -178,22 +178,6 @@ body{
   color: #000;
 }
 
-/* ===== RESPONSIVE ===== */
-
-@media (max-width: 1024px) {
-  .side-slide {
-    display: none;
-  }
-
-  .navigation-container {
-    width: 90%;
-  }
-
-  .card-wrapper {
-    width: 90%;
-  }
-}
-
 .page-container {
 padding-inline: 10rem;
 
@@ -211,4 +195,42 @@ padding-inline: 10rem;
     font-weight: 700;
     margin-bottom: 2rem;
     margin-top: 2rem;
+}
+
+/* ===== GLOBAL RESPONSIVE ===== */
+
+@media (max-width: 1024px) {
+  .page-container {
+    padding-inline: 4rem;
+  }
+
+  .header-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-container {
+    padding-inline: 1.5rem;
+  }
+
+  .section-gap {
+    padding-block: 2rem;
+  }
+
+  .header-title {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-container {
+    padding-inline: 1rem;
+  }
+
+  .header-title {
+    font-size: 1.5rem;
+  }
 }

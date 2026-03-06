@@ -86,3 +86,28 @@
 .shop-container .shop-card .shop-content-wrapper button:hover{
     background: rgba(255,255,255,0.2);
 }
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+  .shop-section h2 {
+    font-size: 1.75rem;
+  }
+
+  .shop-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .shop-container .shop-card .image-wrapper {
+    aspect-ratio: 4 / 5;
+  }
+
+  .shop-container .shop-card .shop-content-wrapper h3 {
+    font-size: 1rem;
+  }
+
+  .shop-container .shop-card .shop-content-wrapper p {
+    font-size: 0.8rem;
+  }
+}

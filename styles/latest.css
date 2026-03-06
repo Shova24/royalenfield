@@ -109,3 +109,38 @@
         border: none;
         cursor: pointer;
       }
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 1024px) {
+  .latest-cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .latest-top-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .latest-top-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .latest-cards-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .card-content h3 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .latest-card .image-wrapper {
+    aspect-ratio: 4 / 5;
+  }
+}
