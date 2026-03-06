@@ -1,48 +1,170 @@
+/* SECTION */
+
 .legacy-section{
-  background-color:  rgba(41, 40, 40, 0.9);
+  background-color: rgba(41,40,40,0.5);
+  color: white;
+  padding: 4rem 0;
 }
 
-.legacy-section .legacy-container{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+
+/* CONTAINER */
+
+.legacy-container{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-.legacy-section .legacy-container .header-title{
-    text-align: left;
+
+/* HEADER */
+
+.header-title{
+  text-align: left;
 }
 
-.legacy-section .legacy-container .slider-container{
-    position: relative;
-}
-.legacy-section .legacy-container .slider-container .legacy-navigation-container{
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    transform: translateY(-50%);
-    pointer-events: none; 
-}
-.legacy-section button{
-    background: rgba(255, 255, 255, 0.1);
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    position: absolute;
-    pointer-events: auto;
-    z-index: 5;
+
+/* SLIDER */
+
+.slider-container{
+  position: relative;
+  overflow: visible;
 }
 
-.legacy-section .legacy-container .slider-container .legacy-navigation-container .prev-btn{
-    left: -1.5rem;
+
+/* SLIDE */
+
+.legacy-slide{
+  position: relative;
+  overflow: hidden;
 }
 
-.legacy-section .legacy-container .slider-container .legacy-navigation-container .next-btn{
-    right: -1.5rem;
+
+/* IMAGE */
+
+.image-wrapper{
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+.image-wrapper img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+/* IMAGE OVERLAY */
+
+.overlay{
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.6),
+    rgba(0,0,0,0.2)
+  );
+}
+
+
+/* TEXT CONTENT */
+
+.content-wrapper{
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  max-width: 400px;
+}
+
+.content-wrapper h3{
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.content-wrapper p{
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+
+/* NAVIGATION */
+
+.legacy-navigation-container{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  z-index: 10;
+}
+
+
+/* NAV BUTTON */
+
+.nav-btn{
+  position: absolute;
+  pointer-events: auto;
+
+  width: 3rem;
+  height: 3rem;
+
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.2);
+
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+
+  color: white;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.2rem;
+
+  transition: 0.3s;
+}
+
+
+/* NAV POSITIONS */
+
+.prev-btn{
+  left: -1.5rem;
+}
+
+.next-btn{
+  right: -1.5rem;
+}
+
+
+/* HOVER */
+
+.nav-btn:hover{
+  background: white;
+  color: black;
+}
+
+
+/* EXPLORE BUTTON */
+
+.explore-btn{
+  align-self: center;
+
+background-image: linear-gradient(to right, #56565a, #3c3d3d);
+  border: none;
+
+  color: white;
+  padding: 0.75rem 2rem;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+
+.explore-btn:hover{
+  background: white;
+  color: black;
 }

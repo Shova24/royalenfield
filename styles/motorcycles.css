@@ -12,6 +12,8 @@
     align-items: center;
     gap: 2rem;
     padding: 2rem 0;
+
+
 }
 
 .motorcycles-section .navigation-container {
@@ -23,6 +25,8 @@
     gap: 3rem;
     z-index: 2;   /* above menus */
     pointer-events: auto;
+    width: 100%;
+    padding-inline: 2rem;
 }
 
 .motorcycles-section .navigation-container button {
