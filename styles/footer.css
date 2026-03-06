@@ -1,0 +1,193 @@
+.footer{
+    background: #000;
+    color: #fff;
+
+
+}
+
+.top-footer-section {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+        padding-top: 4cqb;
+}
+
+.footer-info-card{
+    flex: 1;
+    padding: 1rem;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    cursor: pointer;
+
+}
+
+.footer-info-card .icon{
+    width: 3em;
+    height: 3em;
+  
+}
+
+.footer-info-card button {
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+    width: fit-content;
+}
+
+.footer-info-card button svg{
+    width: 1em;
+    height: auto;
+
+}
+
+
+
+.footer-middle-section{
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: repeat(3, 1fr);
+    padding-block: 3rem;
+}
+
+
+
+.footer-middle-section ul li {
+    list-style: none;
+    color: rgba(255,255,255,0.4);
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 1rem;
+    line-height: 200%;
+}
+
+.footer-middle-section ul li.footer-cat-title {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #fff;
+    font-size: 1.25rem;
+    line-height: normal;
+}
+
+.footer-middle-section ul li.footer-cat-title::before {
+    content: '';
+    display: inline-block;
+    width: 0.2em;
+    height: 1em;
+    background: #fff;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+
+}
+
+.separator{
+    height: 1px;
+    background: rgba(255,255,255,0.15);
+    margin-block: 2rem;
+    width: 100%;
+}
+
+
+.footer-bottom-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.footer-bottom-section .contact-info{
+    padding-block: 4rem;
+
+}
+
+.footer-bottom-section .contact-info p{
+    color: rgba(255,255,255,0.4);
+    font-size: 1rem;
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+.footer-bottom-section .contact-info h4{
+    color: #fff;
+    font-size: 2rem;
+    display: flex;
+    gap: 0.25rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-bottom-section .contact-info h4 span{
+    height: 1em;
+    background: rgba(255,255,255,0.4);
+    padding-inline: .25px;
+    margin-inline: 0.25rem;
+}
+
+.footer-bottom-section .contact-info h4 svg{
+    height: 1em;
+    width: auto;
+}
+
+.footer-bottom-section .links{
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+}
+
+.footer-bottom-section .links .social-links{
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-bottom-section .links .social-links a{
+    background: rgba(255,255,255,0.1);
+    transition: 0.3s ease;
+    padding: 0.875rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.footer-bottom-section .links .page-links{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 2rem;
+   color: rgba(255,255,255,0.6);
+}
+
+
+
+.copyright{
+    color: rgba(255,255,255,0.4);
+    font-size: 0.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
+.copyright span{
+    background: rgba(255,255,255,0.4);
+    padding: 1px;
+    height: 1em;
+}
+
